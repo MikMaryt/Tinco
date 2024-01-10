@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="tinco, tinko, shopping, fitness, health, sport, fashion, trending, shop, products">
-    <meta name="description" content="Online Shopping platform for trending fitness, health and fashion cheat codes!">
+    <meta name="description" content="Tinco - The Online Shopping platform for trending fitness, health and fashion cheat codes!">
     <title>Tinco</title>
-    <link rel="stylesheet" href="webstyles.css">
+    <link rel="stylesheet" type="text/css" href="webstyles.css">
     <link rel="icon" href="images\tinco diamond.png">
 </head>
 <body>
@@ -16,7 +16,7 @@
             <img class="hfull" src="icons/burgermenu.svg" alt="menu">
         </button>
 
-        <div class="bars hfull">
+        <div class="navbarcontents hfull">
 
             <ul class="leftbar navbarlist hfull">
                 <li class="hfull">
@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="smallbutton hover-colorswap border-white text-white border-radius-xs nobg">Sign in</a>
+                    <a href="sign-in/index.html" class="smallbutton navbar-signin nodecor hover-colorswap border-white text-white border-radius-xs nobg">Sign in</a>
                 </li>
             </ul>
 
@@ -46,16 +46,16 @@
     <main>
         <aside class="menubar">
             <ul>
-                <li class="hover-bgcolor-dark"><a href="">Home</a></li>
+                <li class="hover-bgcolor-dark"><a href="index.html">Home</a></li>
                 <li class="hover-bgcolor-dark"><a href="">About Us</a></li>
                 <li class="hover-bgcolor-dark"><a href="">Contact Us</a></li>
                 <li class="hover-bgcolor-dark"><a href="">Jobs</a></li>
             </ul>
         </aside>
 
-        <div id="browsing-side">
+        <div id="main-content">
             <section class="category-popular category">
-                <h1 class="categorytitle">
+                <h1 class="categorytitle uline">
                     Popular  <img src="icons/fire-solid.svg">
                 </h1>
                 <div class="categoryshop">
@@ -155,7 +155,7 @@
             </section >
             
             <section class="category-fitness category">
-                <h1 class="categorytitle">
+                <h1 class="categorytitle uline">
                     Fitness
                 </h1>
                 <div class="categoryshop">
@@ -267,7 +267,7 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quod. Odit tenetur recusandae asperiores quis repudiandae mollitia dolore quas nisi in natus!</p>
             </li>
             <li id="company">
-                <h3 class="text-white">Company</h3>
+                <h3 class="uline text-white">Company</h3>
                 <ul>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Blog</a></li>
@@ -275,7 +275,7 @@
                 </ul>
             </li>
             <li id="contact">
-                <h3 class="text-white">Contact details</h3>
+                <h3 class="uline text-white">Contact details</h3>
                 <p>308 Negra Arroyo Lane. Albuquerque, New Mexico. 87104</p>
                 <p>+447401033505</p>
             </li>
@@ -284,5 +284,6 @@
     </footer>
 
     <script src='navigation.js'></script>
+    <script src="sidebar.js"></script>
 </body>
 </html>

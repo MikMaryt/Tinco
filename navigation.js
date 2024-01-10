@@ -1,10 +1,4 @@
 const scrollshops = document.getElementsByClassName('categoryshop');
-const menu = document.querySelector('.menu');
-const menubar = document.querySelector('.menubar');
-const contentside = document.getElementById("browsing-side");
-const footer = document.querySelector('footer');
-
-let menutoggle = false;
 
 const TOTALTIME = 500;
 
@@ -120,16 +114,3 @@ const resizeevent = function() {
 
 resizeevent();
 window.addEventListener('resize', resizeevent);
-
-menu.addEventListener('click',() => {
-    if (menutoggle) {
-        contentside.style.marginLeft = "0";
-        footer.style.marginLeft = "0";
-        menubar.style.display = 'none';
-    } else {
-        contentside.style.marginLeft = "clamp(100px,12%,100%)";
-        footer.style.marginLeft = "clamp(100px,12%,100%)";
-        menubar.style.display = 'block';
-    }
-    menutoggle = !menutoggle;
-})

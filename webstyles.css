@@ -10,7 +10,8 @@ body {
 }
 
 :root {
-    --darkpurpl: rgb(51, 19, 63);
+    --darkpurple: hsl(266, 58%, 26%);;
+    --darkerpurple: rgb(51, 19, 63);
     --ogpurple: hsl(266, 59%, 54%);
     --lightpurple: hsl(258, 85%, 72%);
     --transpurple: hsla(271, 60%, 60%, 0.548);
@@ -18,6 +19,8 @@ body {
 }
 
 /*font-family: 'Rubik', sans-serif;*/
+
+
 
 .navbar {
     position: fixed;
@@ -34,7 +37,7 @@ body {
     margin: 0;
 }
 
-.text-white, .searchbar-input, .menubar > ul > * {
+.text-white, .rubik-font, .searchbar-input, .menubar > ul > * {
     font-weight: 600;
     font-family: 'Rubik', sans-serif;
 }
@@ -61,7 +64,7 @@ button, a {
     height: 100%;
 }
 
-.bars {
+.navbarcontents {
     display: flex;
     margin-right: 20px;
     align-items: center;
@@ -96,7 +99,7 @@ button, a {
 }
 
 .smallbutton {
-    padding: 7px 13px 7px 13px;
+    padding: 7px 13px;
 }
 
 .tinco-logo-white {
@@ -111,7 +114,7 @@ button, a {
     font-size: 1.1rem;
     width: 100%;
     padding: 0;
-    padding-left: 20px;
+    padding-inline: 20px;
 }
 
 .searchbar-form {
@@ -134,6 +137,15 @@ button, a {
 
 .hover-bgcolor:hover {
     background-color: hsla(0,100%,100%,0.1);
+}
+
+.hover-bgcolor-purple {
+    transition: background-color 150ms, box-shadow 150ms;
+}
+
+.hover-bgcolor-purple:hover {
+    box-shadow: 0px 2px 4px hsl(0,0%,67%);
+    background-color: var(--darkpurple);
 }
 
 .hover-bgcolor-dark {
@@ -185,7 +197,7 @@ main {
 }
 
 
-#browsing-side {
+#main-content {
     display: block;
     row-gap: 15px;
 
@@ -230,7 +242,6 @@ main {
         font-size: 1.5em;
         font-family: 'Rubik', sans-serif;
         margin: 0px 0px 0px 2.5%;
-        text-decoration: underline;
     }
      .categoryshop {
         z-index: 3;
@@ -339,6 +350,62 @@ main {
 }
 
 
+.title-b {
+    font-size: 2rem;
+    margin-bottom: 22px;
+    margin-top: 7px;
+    color: hsl(0,0%,10%);
+}
+
+#sign-in-form > label {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.emailinput {
+    margin-bottom: 20px;
+}
+
+.titlelogo {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    height: 55px;
+}
+
+.smalltext {
+    display: block;
+    width: fit-content;
+    margin: 0;
+    margin-left: auto;
+}
+
+#sign-in-box {
+    margin: auto;
+    box-shadow: 0px 0px 1px 1px hsla(0,0%,0%,0.4);
+    padding: 23px;
+    width: 340px;
+}
+
+.paddingbox {
+    width: 100%;
+    padding: 17px;
+    padding-top: 10px;
+}
+
+.submitbutton {
+    display: block;
+    margin-block: 14px;
+}
+
+#sign-in-form > input {
+    font-size: 1rem;
+    width: 100%;
+    padding: 6px 6px;
+}
+
 footer {
     margin-top: 80px;
     height: 165px;
@@ -367,7 +434,6 @@ footer  p, footer > ul ul, footer > ul ul a{
 footer h3 {
     margin-top: 7px;
     font-size: 1.2rem;
-    text-decoration: underline;
     margin-bottom: 20px;
 }
 
@@ -392,6 +458,11 @@ footer #company > ul {
     list-style-type:disc;
     margin-left: 19%;
 }
+
+.navbar-signin {
+    padding: 6px 12px;
+}
+
 
 
 @media screen and (max-width: 800px) {
@@ -429,6 +500,14 @@ footer #company > ul {
     border-radius: 26px;
 }
 
+.margin-small {
+    margin-block-start: 12px;
+}
+
+.purple-button {
+    background-color: var(--ogpurple);
+}
+
 .border-white {
     border: 2px solid white;
 }
@@ -440,5 +519,18 @@ footer #company > ul {
 .hmost {
     height: 80%;
 }
+.uline {
+    text-decoration: underline;
+}
 
+.nodecor {
+    text-decoration: none;
+}
 
+.middle {
+    margin-inline: auto;
+}
+
+.fontsize-m {
+    font-size: 1.1rem;
+}
