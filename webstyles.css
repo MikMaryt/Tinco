@@ -15,6 +15,7 @@ body {
     --ogpurple: hsl(266, 59%, 54%);
     --lightpurple: hsl(258, 85%, 72%);
     --transpurple: hsla(271, 60%, 60%, 0.548);
+    --lighterpurple: hsl(271, 59%, 73%);
     --purplewhite: hsl(271, 58%, 89%);
     --hintpurple: hsl(276, 54%, 95%);
 }
@@ -38,7 +39,7 @@ body {
     margin: 0;
 }
 
-.text-white, .rubik-font, .searchbar-input, .menubar > ul > * {
+.text-white, .rubik-font, a,p,h1,h3, .searchbar-input, .menubar > ul > * {
     font-weight: 600;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,7 +68,7 @@ button, a {
 
 .navbarcontents {
     display: flex;
-    margin-right: 20px;
+    margin-inline: 20px;
     align-items: center;
     justify-content: space-between;
 }
@@ -100,7 +101,7 @@ button, a {
 }
 
 .smallbutton {
-    padding: 7px 13px;
+    padding: 8px 13px;
 }
 
 .tinco-logo-white {
@@ -154,7 +155,7 @@ button, a {
 }
 
 .hover-bgcolor-dark:hover {
-    background-color: hsla(0,0%,0%,0.1);
+    background-color: hsla(0,0%,40%,0.25);
 }
 
 .scroll > .caret {
@@ -197,6 +198,10 @@ main {
     position: relative;
 }
 
+.notop {
+    position: relative;
+    top: 0;
+}
 
 #main-content {
     display: block;
@@ -358,6 +363,7 @@ main {
     color: hsl(0,0%,10%);
 }
 
+
 #sign-in-form > label {
     display: block;
     width: 100%;
@@ -406,6 +412,137 @@ main {
     font-size: 1rem;
     width: 100%;
     padding: 6px 6px;
+}
+
+.hero {
+    background-image: url(images/mountain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 97vh;
+    margin: 0;
+}
+
+.hero-title {
+    font-size: clamp(16px,11.5vh,220px);
+    line-height: 93%;
+    margin: 0;
+}
+
+.hero-container {
+    text-align: center;
+    width: clamp(300px,52vw,800px);
+    position: absolute;
+    margin: 0;
+    inset: 15% auto auto 27%;
+}
+
+.hero-desc {
+    margin-block: clamp(7px,3.6%,28px);
+    font-size: clamp(10px, 3.2vh, 200px);
+}
+
+
+.hero-image {
+    overflow: hidden;
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero-image > img {
+    height: 110%;
+    object-position: 0 -45px;
+    float: right;
+    object-fit: cover;
+}
+
+.borderbutton {
+    padding: 4px 11px;
+    font-size: 1.3rem;
+    border: 3px solid var(--ogpurple);
+}
+
+#fatherofsections {
+    display: grid;
+    row-gap: 50px;
+    margin-top: 40px;
+}
+
+#fatherofsections > * {
+    padding-inline: 4%;
+}
+
+.imgleft {
+    background-color: var(--purplewhite);
+    height: 400px;
+    margin-block: 20px;
+    display: flex;
+}
+
+.imgleft > img {
+    width: 50%;
+    margin: 10px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.imgleft > div {
+    text-align: center;
+    position: relative;
+    overflow: hidden auto;
+    width: 100%;
+    padding-inline: clamp(5px,4%,28px);
+    padding-top: 20px;
+}
+
+.imgleft h1 {
+    background-color: var(--lighterpurple);
+    border-radius: 50%;
+    height: 43px;
+    top: 5px;
+    left: 33%;
+    position: absolute;
+    width: clamp(160px,26%,280px);
+    padding-top: clamp(2px,0.3vmin,4px);
+    font-size: clamp(26px,2.3vw,33px);
+    margin-inline: auto;
+}
+
+.stripedpurple {
+    border-radius: 50%;
+    position: relative;
+    height: 43px;
+    width: clamp(160px,26%,280px);
+}
+
+
+.three-text {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    max-height: 350px;
+    overflow: auto;
+}
+
+.three-text > div {
+    overflow: auto;
+    width: fit-content;
+    max-width: 30%;
+    background-color: hsl(271, 99%, 85%);
+    border-radius: 48px;
+    padding: 12px;
+    padding-bottom: 0;
+    text-align: center;
+    position: relative;
+}
+
+.three-text img {
+    display: inline-block;
+    width: clamp(30px,17%,58px);
+    object-fit: cover;
 }
 
 footer {
@@ -480,6 +617,10 @@ footer #company > ul {
     color: white;
 }
 
+.text-purple {
+    color: var(--darkpurple);
+}
+
 .nobg {
     background-color: rgba(0,0,0,0);
 }
@@ -535,4 +676,16 @@ footer #company > ul {
 
 .fontsize-m {
     font-size: 1.1rem;
+}
+
+.fontsize-l {
+    font-size: 1.2rem;
+}
+
+.fontsize-xl {
+    font-size: 20px;
+}
+
+.shadow {
+    box-shadow: 0px 1px 2px rgb(53, 53, 53);
 }
