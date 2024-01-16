@@ -20,7 +20,10 @@
 
             <ul class="leftbar navbarlist hfull">
                 <li class="hfull">
-                    <a href="index.html"><img class="tinco-logo-white" src="images\tinco logo-white.png" alt="tinco"></a>
+                    <a href="index.html"><img id="navbar-logo" class="tinco-logo-white" src="images\tinco logo-white.png" alt="tinco"></a>
+                </li>
+                <li class="hfull">
+                    <a href="index.html"><img id="hiddenlogo" class="tinco-logo-white" src="images/tinco diamond-white tilted.png" alt="tinco"></a>
                 </li>
             </ul>
     
@@ -260,27 +263,37 @@
     </main>
 
     <footer>
-        <ul>
-            <li id="copyright">
-                <img class="hmost" src="images/tinco logo-white.png" alt="Tinco">
-                <p>Tinco© copyright 2024. All rights reserved.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quod. Odit tenetur recusandae asperiores quis repudiandae mollitia dolore quas nisi in natus!</p>
-            </li>
-            <li id="company">
-                <h3 class="uline text-white">Company</h3>
-                <ul>
-                    <li><a href="about-us/index.html">About Us</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Jobs</a></li>
-                </ul>
-            </li>
-            <li id="contact">
-                <h3 class="uline text-white">Contact details</h3>
-                <p>308 Negra Arroyo Lane. Albuquerque, New Mexico. 87104</p>
-                <p>+447401033505</p>
-            </li>
-        </ul>
-    
+        <div id="footerpadding">
+            <ul id="titleslist">
+                <li>
+                    <img src="images/tinco logo-white.png" alt="Tinco">
+                </li>
+                <li>
+                    <h3>Company</h3>
+                </li>
+                <li>
+                    <h3>Contact Us</h3>
+                </li>
+            </ul>
+            <hr>
+            <ul id="footerlist">
+                <li id="copyright">
+                    <p>Tinco© copyright 2024. All rights reserved.</p>
+                    <p>308 Negra Arroyo Lane. Albuquerque, New Mexico. 87104</p>
+                </li>
+                <li id="company">
+                    <ul id="companylist">
+                        <li><a href="about-us/index.html">About Us</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Jobs</a></li>
+                    </ul>
+                </li>
+                <li id="contact">
+                    <p>+447401033505</p>
+                    <p>info@tinco.co.uk</p>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     <script src='navigation.js'></script>
