@@ -587,7 +587,7 @@ subpages
     margin: 0;
     box-shadow: 15px -8px 1px var(--lighterpurple);
     object-fit: cover;
-    object-position: 0px -80px;
+    object-position: 0px -210px;
 }
 
 .imgright > div {
